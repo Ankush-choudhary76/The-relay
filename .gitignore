@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Environment and secrets
+.env
+*.env.local
+
+# Data and large downloads (except sample metadata)
+data/papers/*.pdf
+data/processed/*.json
+data/measurements/*.json
+!data/measurements/.gitkeep
+!data/processed/.gitkeep
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and OS files
+*.log
+.DS_Store
+.vscode/
+.idea/
+

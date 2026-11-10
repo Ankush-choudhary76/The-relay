@@ -1,0 +1,38 @@
+[
+  {
+    "paper_id": "1706.03762v7",
+    "arxiv_id": "1706.03762",
+    "version": "v7",
+    "title": "Attention Is All You Need",
+    "download_url": "https://arxiv.org/pdf/1706.03762v7",
+    "download_date": "2026-11-10T10:25:47.238962+00:00",
+    "file_name": "1706.03762v7.pdf",
+    "file_size_bytes": 2215244,
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "file_path": "/Users/ankushchoudhari76/Documents/VS CODE/the-relay/data/papers/1706.03762v7.pdf"
+  },
+  {
+    "paper_id": "2410.00037v1",
+    "arxiv_id": "2410.00037",
+    "version": "v1",
+    "title": "Moshi: a speech-text foundation model for real-time dialogue",
+    "download_url": "https://arxiv.org/pdf/2410.00037v1",
+    "download_date": "2026-11-10T10:25:50.062562+00:00",
+    "file_name": "2410.00037v1.pdf",
+    "file_size_bytes": 4694312,
+    "sha256": "a687144cc77bea86b0c60ae800ccb1d3e0816033fa5c7960388fe29a0dbfcfac",
+    "file_path": "/Users/ankushchoudhari76/Documents/VS CODE/the-relay/data/papers/2410.00037v1.pdf"
+  },
+  {
+    "paper_id": "2507.07955v2",
+    "arxiv_id": "2507.07955",
+    "version": "v2",
+    "title": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling",
+    "download_url": "https://arxiv.org/pdf/2507.07955v2",
+    "download_date": "2026-11-10T10:25:51.403431+00:00",
+    "file_name": "2507.07955v2.pdf",
+    "file_size_bytes": 1375282,
+    "sha256": "04a2b32e6e82853cfc23c5db132750874a86cde99219ec6f664128f4aa83122f",
+    "file_path": "/Users/ankushchoudhari76/Documents/VS CODE/the-relay/data/papers/2507.07955v2.pdf"
+  }
+]

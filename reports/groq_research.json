@@ -1,0 +1,632 @@
+{
+  "research_date": "2026-11-10",
+  "account_verification": {
+    "authenticated": true,
+    "tested_model": "openai/gpt-oss-20b",
+    "test_request_successful": true,
+    "account_plan_status": "Free Plan (inferred from account headers matching Free Plan limits; exact organization plan not independently confirmed via console limits dashboard)",
+    "available_models_count": 11,
+    "available_models": [
+      "allam-2-7b",
+      "canopylabs/orpheus-arabic-saudi",
+      "canopylabs/orpheus-v1-english",
+      "meta-llama/llama-prompt-guard-2-22m",
+      "meta-llama/llama-prompt-guard-2-86m",
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b",
+      "openai/gpt-oss-safeguard-20b",
+      "qwen/qwen3.8-27b",
+      "whisper-large-v3",
+      "whisper-large-v3-turbo"
+    ]
+  },
+  "models": [
+    {
+      "model_id": "openai/gpt-oss-20b",
+      "category": "Reasoning",
+      "provider": "OpenAI / GroqCloud",
+      "context_window": 131072,
+      "max_output_tokens": 65536,
+      "reasoning_effort_supported": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "rpm": 30,
+      "rpd": 1000,
+      "tpm": 8000,
+      "tpd": 200000,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 8000,
+        "tpd": 200000,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": 1000,
+        "rpd": null,
+        "tpm": 250000,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": 0.075,
+      "output_price_per_1m": 0.3,
+      "evidence": "Officially documented in Groq rate limits guide for Free Plan; confirmed by live account response headers (tpm=8000, rpd=1000)"
+    },
+    {
+      "model_id": "openai/gpt-oss-120b",
+      "category": "Reasoning",
+      "provider": "OpenAI / GroqCloud",
+      "context_window": 131072,
+      "max_output_tokens": 65536,
+      "reasoning_effort_supported": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "rpm": 30,
+      "rpd": 1000,
+      "tpm": 8000,
+      "tpd": 200000,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 8000,
+        "tpd": 200000,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": 1000,
+        "rpd": null,
+        "tpm": 250000,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": 0.15,
+      "output_price_per_1m": 0.6,
+      "evidence": "Officially documented in Groq Free Plan rate limits guide and model catalog; listed in account /v1/models"
+    },
+    {
+      "model_id": "qwen/qwen3.8-27b",
+      "category": "Text generation",
+      "provider": "Alibaba / GroqCloud",
+      "context_window": 131072,
+      "max_output_tokens": 16384,
+      "reasoning_effort_supported": null,
+      "rpm": 30,
+      "rpd": 1000,
+      "tpm": 8000,
+      "tpd": 200000,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 8000,
+        "tpd": 200000,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": 1000,
+        "rpd": null,
+        "tpm": 250000,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Officially documented context window (131,072) and max output (16,384) in Groq model catalog; Free Plan limits in Groq rate limits guide"
+    },
+    {
+      "model_id": "allam-2-7b",
+      "category": "Text generation (Bilingual)",
+      "provider": "SDAIA / GroqCloud",
+      "context_window": 4096,
+      "max_output_tokens": 4096,
+      "reasoning_effort_supported": null,
+      "rpm": null,
+      "rpd": null,
+      "tpm": null,
+      "tpd": null,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Officially documented context window (4,096) and max output (4,096) on official Groq ALLaM model page; standard rate limits not published in primary Free Plan table"
+    },
+    {
+      "model_id": "openai/gpt-oss-safeguard-20b",
+      "category": "Safety/classification",
+      "provider": "OpenAI / GroqCloud",
+      "context_window": 131072,
+      "max_output_tokens": 65536,
+      "reasoning_effort_supported": null,
+      "rpm": 3,
+      "rpd": 1000,
+      "tpm": 2000,
+      "tpd": 200000,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 3,
+        "rpd": 1000,
+        "tpm": 2000,
+        "tpd": 200000,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": 1000,
+        "rpd": null,
+        "tpm": 250000,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Officially documented in Groq Free Plan rate-limits table (RPM: 3, RPD: 1000, TPM: 2000, TPD: 200000); listed in account /v1/models"
+    },
+    {
+      "model_id": "meta-llama/llama-prompt-guard-2-22m",
+      "category": "Safety/classification",
+      "provider": "Meta / GroqCloud",
+      "context_window": 512,
+      "max_output_tokens": 512,
+      "reasoning_effort_supported": null,
+      "rpm": 30,
+      "rpd": 14400,
+      "tpm": 15000,
+      "tpd": 500000,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 15000,
+        "tpd": 500000,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Officially documented on model page (context: 512, max_output: 512); Free Plan table lists RPM: 30, RPD: 14400, TPM: 15000, TPD: 500000"
+    },
+    {
+      "model_id": "meta-llama/llama-prompt-guard-2-86m",
+      "category": "Safety/classification",
+      "provider": "Meta / GroqCloud",
+      "context_window": 512,
+      "max_output_tokens": 512,
+      "reasoning_effort_supported": null,
+      "rpm": 30,
+      "rpd": 14400,
+      "tpm": 15000,
+      "tpd": 500000,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 15000,
+        "tpd": 500000,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Officially documented on model page (context: 512, max_output: 512); Free Plan table lists RPM: 30, RPD: 14400, TPM: 15000, TPD: 500000"
+    },
+    {
+      "model_id": "whisper-large-v3",
+      "category": "Audio",
+      "provider": "OpenAI / GroqCloud",
+      "context_window": null,
+      "max_output_tokens": null,
+      "reasoning_effort_supported": null,
+      "rpm": 20,
+      "rpd": 2000,
+      "tpm": null,
+      "tpd": null,
+      "ash": 7200,
+      "asd": 28800,
+      "free_plan": {
+        "rpm": 20,
+        "rpd": 2000,
+        "tpm": null,
+        "tpd": null,
+        "ash": 7200,
+        "asd": 28800
+      },
+      "developer_plan": {
+        "rpm": 300,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": 400000,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Audio transcription model; Free Plan table documents RPM: 20, RPD: 2000, ASH: 7200, ASD: 28800"
+    },
+    {
+      "model_id": "whisper-large-v3-turbo",
+      "category": "Audio",
+      "provider": "OpenAI / GroqCloud",
+      "context_window": null,
+      "max_output_tokens": null,
+      "reasoning_effort_supported": null,
+      "rpm": 20,
+      "rpd": 2000,
+      "tpm": null,
+      "tpd": null,
+      "ash": 7200,
+      "asd": 28800,
+      "free_plan": {
+        "rpm": 20,
+        "rpd": 2000,
+        "tpm": null,
+        "tpd": null,
+        "ash": 7200,
+        "asd": 28800
+      },
+      "developer_plan": {
+        "rpm": 300,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": 400000,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Audio transcription model; Free Plan table documents RPM: 20, RPD: 2000, ASH: 7200, ASD: 28800"
+    },
+    {
+      "model_id": "canopylabs/orpheus-v1-english",
+      "category": "Other specialized models",
+      "provider": "Canopy Labs / GroqCloud",
+      "context_window": 4000,
+      "max_output_tokens": 50000,
+      "reasoning_effort_supported": null,
+      "rpm": 10,
+      "rpd": 100,
+      "tpm": 1200,
+      "tpd": 3600,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 10,
+        "rpd": 100,
+        "tpm": 1200,
+        "tpd": 3600,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Speech/audio model; Groq model catalog lists context: 4000, max_output: 50000; Free Plan table documents RPM: 10, RPD: 100, TPM: 1200, TPD: 3600"
+    },
+    {
+      "model_id": "canopylabs/orpheus-arabic-saudi",
+      "category": "Other specialized models",
+      "provider": "Canopy Labs / GroqCloud",
+      "context_window": 4000,
+      "max_output_tokens": 50000,
+      "reasoning_effort_supported": null,
+      "rpm": 10,
+      "rpd": 100,
+      "tpm": 1200,
+      "tpd": 3600,
+      "ash": null,
+      "asd": null,
+      "free_plan": {
+        "rpm": 10,
+        "rpd": 100,
+        "tpm": 1200,
+        "tpd": 3600,
+        "ash": null,
+        "asd": null
+      },
+      "developer_plan": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null,
+        "ash": null,
+        "asd": null
+      },
+      "input_price_per_1m": null,
+      "output_price_per_1m": null,
+      "evidence": "Speech/audio model; Groq model catalog lists context: 4000, max_output: 50000; Free Plan table documents RPM: 10, RPD: 100, TPM: 1200, TPD: 3600"
+    }
+  ],
+  "rate_limits": [
+    {
+      "dimension": "Requests per day (RPD)",
+      "plan": "Free Plan",
+      "value": 1000,
+      "status": "Officially documented: 1,000 RPD for openai/gpt-oss-20b; confirmed by x-ratelimit-limit-requests header",
+      "confidence": "Officially documented & Account-header confirmed"
+    },
+    {
+      "dimension": "Tokens per minute (TPM)",
+      "plan": "Free Plan",
+      "value": 8000,
+      "status": "Officially documented: 8,000 TPM for openai/gpt-oss-20b; confirmed by x-ratelimit-limit-tokens header",
+      "confidence": "Officially documented & Account-header confirmed"
+    },
+    {
+      "dimension": "Requests per minute (RPM)",
+      "plan": "Free Plan",
+      "value": 30,
+      "status": "Officially documented: 30 RPM in official Free Plan table for openai/gpt-oss-20b; not exposed as a distinct response header in live 200 OK responses",
+      "confidence": "Officially documented"
+    },
+    {
+      "dimension": "Tokens per day (TPD)",
+      "plan": "Free Plan",
+      "value": 200000,
+      "status": "Officially documented: 200,000 TPD in official Free Plan table for openai/gpt-oss-20b; not returned in response headers",
+      "confidence": "Officially documented"
+    },
+    {
+      "dimension": "Concurrent request restrictions",
+      "plan": "All Plans",
+      "value": null,
+      "status": "Not publicly documented / not measured",
+      "confidence": "Not publicly documented / not measured"
+    }
+  ],
+  "response_headers": [
+    {
+      "header": "x-ratelimit-limit-requests",
+      "sample_value": "1000",
+      "meaning": "Maximum allowed requests in the daily quota window (RPD)"
+    },
+    {
+      "header": "x-ratelimit-limit-tokens",
+      "sample_value": "8000",
+      "meaning": "Maximum allowed tokens per minute in the rolling window (TPM)"
+    },
+    {
+      "header": "x-ratelimit-remaining-requests",
+      "sample_value": "994 to 999",
+      "meaning": "Remaining requests available in current daily quota window (RPD)"
+    },
+    {
+      "header": "x-ratelimit-remaining-tokens",
+      "sample_value": "6271 to 7869",
+      "meaning": "Remaining tokens available in rolling minute window (TPM)"
+    },
+    {
+      "header": "x-ratelimit-reset-requests",
+      "sample_value": "1m26.4s to 8m38.4s",
+      "meaning": "Time until request rate limit quota counter replenishes (refers to RPD recovery window, not RPM)"
+    },
+    {
+      "header": "x-ratelimit-reset-tokens",
+      "sample_value": "982ms to 12.967s",
+      "meaning": "Time until token rate limit bucket recovers consumed tokens (refers to TPM rolling window)"
+    },
+    {
+      "header": "retry-after",
+      "sample_value": null,
+      "meaning": "Documented to be returned on HTTP 429 status code specifying mandatory wait time in seconds (not observed in baseline because no 429 was triggered)"
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "Test A - Single Streaming Request",
+      "timestamp": "2026-11-10T11:29:40Z",
+      "model": "openai/gpt-oss-20b",
+      "http_status": 200,
+      "first_stream_event_ms": 311.6,
+      "first_user_visible_content_token_ms": null,
+      "total_completion_time_ms": 599.0,
+      "tokens_in": 82,
+      "tokens_out": 60,
+      "reasoning_tokens": 58,
+      "remaining_non_reasoning_completion_tokens": 2,
+      "visible_answer_content_tokens": 0,
+      "rate_limit_headers": {
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "8000",
+        "x-ratelimit-remaining-requests": "999",
+        "x-ratelimit-remaining-tokens": "7858",
+        "x-ratelimit-reset-tokens": "1.065s"
+      },
+      "notes": "With max_tokens=60, completion_tokens totaled 60, of which 58 were reasoning_tokens. Remaining non-reasoning completion tokens totaled 2; the available telemetry does not establish what those remaining two tokens represent. Visible answer content tokens totaled 0. Because no visible content token was generated before cutoff, first_user_visible_content_token_ms is recorded as null. First stream event arrived at ~311.6 ms; total completion time was 599.0 ms."
+    },
+    {
+      "experiment_id": "Test B - 5 Sequential Requests",
+      "sample_size": 5,
+      "model": "openai/gpt-oss-20b",
+      "http_status_all": 200,
+      "ttft_min_ms": 625.99,
+      "ttft_median_ms": 757.52,
+      "ttft_max_ms": 1719.29,
+      "total_min_ms": 855.58,
+      "total_median_ms": 902.65,
+      "total_max_ms": 2061.47,
+      "avg_tokens_in": 100.2,
+      "avg_tokens_out": 345.6,
+      "individual_runs": [
+        {
+          "request_id": "groq_real_001",
+          "ttft_ms": 766.26,
+          "total_ms": 857.46,
+          "tokens_in": 100,
+          "tokens_out": 144
+        },
+        {
+          "request_id": "groq_real_002",
+          "ttft_ms": 1719.29,
+          "total_ms": 2061.47,
+          "tokens_in": 101,
+          "tokens_out": 674
+        },
+        {
+          "request_id": "groq_real_003",
+          "ttft_ms": 628.83,
+          "total_ms": 902.65,
+          "tokens_in": 101,
+          "tokens_out": 310
+        },
+        {
+          "request_id": "groq_real_004",
+          "ttft_ms": 757.52,
+          "total_ms": 855.58,
+          "tokens_in": 98,
+          "tokens_out": 208
+        },
+        {
+          "request_id": "groq_real_005",
+          "ttft_ms": 625.99,
+          "total_ms": 932.79,
+          "tokens_in": 101,
+          "tokens_out": 392
+        }
+      ],
+      "notes": "Five sequential requests provide an empirical baseline for median latency in this specific session. They do not constitute a statistically valid p95 or p99 SLA distribution."
+    },
+    {
+      "experiment_id": "Test C - Controlled Concurrent Batch",
+      "status": "Omitted per safety rules",
+      "reason": "With documented TPM=8000, multi-request concurrent RAG queries (~2,500 prompt tokens each) would risk exceeding 8,000 TPM and triggering rate-limits on live key. Overload and burst testing are conducted on the stand-in simulator."
+    }
+  ],
+  "streaming": {
+    "protocol": "Server-Sent Events (SSE)",
+    "done_signal": "data: [DONE]",
+    "stream_options_support": true,
+    "usage_reported_in_final_chunk": true,
+    "reasoning_token_details_supported": true
+  },
+  "token_usage": {
+    "input_tokens_definition": "System prompt + context passages + user question",
+    "output_tokens_definition": "Generated response tokens + internal reasoning tokens",
+    "retrieved_passages_impact": "Direct addition to input tokens; 5 chunks of 600 tokens add ~2,500-3,000 input tokens per call",
+    "system_instructions_impact": "Count toward input tokens on every request"
+  },
+  "pricing": {
+    "free_tier_cost": 0.0,
+    "model_list_pricing": {
+      "openai/gpt-oss-20b": {
+        "input_per_million": 0.075,
+        "output_per_million": 0.3
+      },
+      "openai/gpt-oss-120b": {
+        "input_per_million": 0.15,
+        "output_per_million": 0.6
+      }
+    },
+    "formula_per_1000_answers": "Cost = 1000 * ((avg_input_tokens / 1,000,000) * input_price + (avg_output_tokens / 1,000,000) * output_price)"
+  },
+  "retry_recommendations": [
+    "Honor Retry-After header directly on HTTP 429",
+    "Exponential backoff with full jitter (Uniform(0.5, 1.5)) for transient 5xx errors",
+    "Do NOT retry client errors (400, 401, 403, 404, 422)",
+    "Do NOT retry daily quota exhaustion (permanent until reset)",
+    "Implement client-side circuit breaker (open after 3 consecutive errors) to prevent thundering herd"
+  ],
+  "unverified_items": [
+    "Exact wall-clock time of daily RPD reset has not been independently verified; the observed reset header indicates a recovery interval, not proof of a specific UTC reset time",
+    "Exact error message payload string for HTTP 429 under each distinct limit type (not deliberately triggered on live account)",
+    "Independent confirmation of exact organization plan type via console limits dashboard (inferred as Free Plan from 1,000 RPD / 8,000 TPM headers)"
+  ],
+  "sources": [
+    {
+      "title": "GroqCloud Rate Limits Documentation",
+      "url": "https://console.groq.com/docs/rate-limits",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "GroqCloud Models & Pricing",
+      "url": "https://groq.com/pricing",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "Groq Reasoning Models Documentation",
+      "url": "https://console.groq.com/docs/reasoning",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "Groq ALLaM-2-7B Model Page",
+      "url": "https://console.groq.com/docs/model/allam-2-7b",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "Groq Prompt Guard Model Page",
+      "url": "https://console.groq.com/docs/model/meta-llama/llama-prompt-guard-2-22m",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "Groq Whisper Model Page",
+      "url": "https://console.groq.com/docs/model/whisper-large-v3",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "Groq API /v1/models endpoint",
+      "url": "https://api.groq.com/openai/v1/models",
+      "date_accessed": "2026-11-10"
+    },
+    {
+      "title": "Empirical live response headers",
+      "source": "Account-level HTTP responses",
+      "date_accessed": "2026-11-10"
+    }
+  ]
+}
