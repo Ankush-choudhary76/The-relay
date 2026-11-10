@@ -1,0 +1,66 @@
+file_name,relative_path,category,extension,size_kb,line_count,description
+download_papers.py,scripts/download_papers.py,Automation Scripts,.py,4.02,130,Automated paper downloader for arXiv PDFs
+generate_reports.py,scripts/generate_reports.py,Automation Scripts,.py,5.58,160,Human-readable summary report generator from results.csv
+ingest_papers.py,scripts/ingest_papers.py,Automation Scripts,.py,1.06,33,PDF text extraction and structured JSON preprocessor
+measure_real_groq.py,scripts/measure_real_groq.py,Automation Scripts,.py,5.87,163,Live Groq API measurement and baseline collection runner
+run_evaluation.py,scripts/run_evaluation.py,Automation Scripts,.py,1.8,50,Retrieval evaluation runner across questions and settings
+run_load_test.py,scripts/run_load_test.py,Automation Scripts,.py,8.32,223,Stand-in simulator stress and scenario load test runner
+README.md,README.md,Configuration & Root,.md,11.11,257,"Full project documentation, quickstart, architecture, and testing guide"
+requirements.txt,requirements.txt,Configuration & Root,.txt,0.26,16,Project Python dependencies and library versions
+results.csv,results.csv,Configuration & Root,.csv,16.76,154,Benchmark and load testing results dataset (154 experiment runs)
+__init__.py,src/relay/__init__.py,Core Source Code,.py,0.08,4,Core Relay RAG package initialization
+chunking.py,src/relay/chunking.py,Core Source Code,.py,3.95,125,Sliding-window token-aware document chunker
+citation_verifier.py,src/relay/citation_verifier.py,Core Source Code,.py,5.48,147,Deterministic ground-truth citation extractor and verifier
+cli.py,src/relay/cli.py,Core Source Code,.py,2.8,80,Typer and Rich command line interface for Relay
+config.py,src/relay/config.py,Core Source Code,.py,2.11,68,Pydantic BaseSettings application configuration
+evaluation.py,src/relay/evaluation.py,Core Source Code,.py,7.77,214,Evaluation question loader and automated benchmark suite
+evidence.py,src/relay/evidence.py,Core Source Code,.py,5.18,136,Evidence sufficiency and BM25 threshold evaluator
+generation.py,src/relay/generation.py,Core Source Code,.py,5.7,115,Grounded prompt builder and AnswerGenerator orchestrator
+groq_provider.py,src/relay/groq_provider.py,Core Source Code,.py,11.85,318,Official Groq API HTTP client with streaming and telemetry
+intent.py,src/relay/intent.py,Core Source Code,.py,3.93,89,Query intent classification and domain scope guardrail
+math_format.py,src/relay/math_format.py,Core Source Code,.py,9.02,245,Unicode math post-processor (transforms LaTeX to clean symbols)
+metrics.py,src/relay/metrics.py,Core Source Code,.py,5.61,139,Experiment metrics recorder appending to results.csv
+papers.py,src/relay/papers.py,Core Source Code,.py,3.3,114,PyMuPDF text extractor and paper ingest pipeline
+pipeline.py,src/relay/pipeline.py,Core Source Code,.py,28.43,696,7-stage fault-tolerant RAG pipeline orchestrator
+provider_interface.py,src/relay/provider_interface.py,Core Source Code,.py,1.44,48,Common ModelProvider interface for simulator and Groq
+queue_manager.py,src/relay/queue_manager.py,Core Source Code,.py,2.38,70,Concurrency slot allocator and request queue manager
+rate_limiter.py,src/relay/rate_limiter.py,Core Source Code,.py,2.82,72,"Client-side sliding window rate limiter (RPM, TPM, RPD)"
+retrieval.py,src/relay/retrieval.py,Core Source Code,.py,6.71,156,BM25 Okapi retriever with exact-phrase reranking
+retry.py,src/relay/retry.py,Core Source Code,.py,3.93,115,"Exponential backoff, jitter, and circuit breaker implementation"
+schemas.py,src/relay/schemas.py,Core Source Code,.py,4.75,172,"Pydantic data models for requests, responses, and citations"
+server.py,src/relay/server.py,Core Source Code,.py,3.26,96,FastAPI REST and Server-Sent Events (SSE) server
+standin_provider.py,src/relay/standin_provider.py,Core Source Code,.py,9.75,265,In-process simulator ModelProvider implementation
+real_service.json,data/measurements/real_service.json,Data & Datasets,.json,4.05,107,Telemetry measurements from live Groq API baseline runs
+retrieval_comparison.json,data/measurements/retrieval_comparison.json,Data & Datasets,.json,1.05,41,"Comparative metrics across Settings A, B, and C"
+metadata.json,data/papers/metadata.json,Data & Datasets,.json,1.54,38,arXiv metadata and verification specifications for target papers
+papers_extracted.json,data/processed/papers_extracted.json,Data & Datasets,.json,401.43,695,Structured extracted text for all three target arXiv papers
+questions.jsonl,data/questions.jsonl,Data & Datasets,.jsonl,7.31,17,16 standard benchmark evaluation questions and ground truth
+streamlit_app.py,streamlit_app.py,Frontend Web UI,.py,12.46,371,"Streamlit interactive web dashboard with provider toggle, metrics, and citations"
+1706.03762v7.pdf,data/papers/1706.03762v7.pdf,Research Papers (PDF),.pdf,2163.32,55932,1706.03762v7.pdf file in Research Papers (PDF)
+2410.00037v1.pdf,data/papers/2410.00037v1.pdf,Research Papers (PDF),.pdf,4584.29,33658,2410.00037v1.pdf file in Research Papers (PDF)
+2507.07955v2.pdf,data/papers/2507.07955v2.pdf,Research Papers (PDF),.pdf,1343.05,19230,2507.07955v2.pdf file in Research Papers (PDF)
+__init__.py,standin/__init__.py,Stand-in Simulator,.py,0.04,2,Stand-in simulator package initialization
+app.py,standin/app.py,Stand-in Simulator,.py,6.07,183,Standalone FastAPI simulation HTTP server with admin endpoints
+quota.py,standin/quota.py,Stand-in Simulator,.py,4.11,116,Sliding-window token and request quota tracker
+scenarios.py,standin/scenarios.py,Stand-in Simulator,.py,2.0,67,"Configured load scenarios (burst, sustained overload, etc.)"
+simulator.py,standin/simulator.py,Stand-in Simulator,.py,16.48,367,Calibrated Groq response simulator with Unicode math
+architecture.md,docs/architecture.md,System Documentation,.md,10.39,172,System architecture diagram and component interaction flow
+assistant_interaction_log.md,docs/assistant_interaction_log.md,System Documentation,.md,4.77,106,AI pair programming interaction and prompt history log
+decisions.md,docs/decisions.md,System Documentation,.md,6.47,113,Key engineering design decisions and trade-off rationales
+groq_limits.md,reports/groq_limits.md,Technical Reports,.md,4.67,111,Groq free tier rate limits and response header documentation
+groq_research.json,reports/groq_research.json,Technical Reports,.json,19.48,632,Machine-readable technical metadata for Groq LPU and API
+groq_research_report.md,reports/groq_research_report.md,Technical Reports,.md,27.92,432,Comprehensive 15-section technical research report on Groq
+retrieval_analysis.md,reports/retrieval_analysis.md,Technical Reports,.md,7.71,105,BM25 Okapi retrieval analysis and failure mode study
+standin_calibration.md,reports/standin_calibration.md,Technical Reports,.md,5.63,105,Stand-in service calibration methodology against Groq
+writeup.md,reports/writeup.md,Technical Reports,.md,8.71,152,Two-page engineering summary write-up
+test_citation_verifier.py,tests/test_citation_verifier.py,Test Suite,.py,2.68,83,Unit tests for citation extraction and validity checking
+test_evidence_and_intent.py,tests/test_evidence_and_intent.py,Test Suite,.py,2.0,58,Unit tests for query intent and evidence thresholds
+test_math_format.py,tests/test_math_format.py,Test Suite,.py,5.4,166,Unit tests for Unicode math formatting and LaTeX conversion
+test_metrics_and_csv.py,tests/test_metrics_and_csv.py,Test Suite,.py,1.87,57,Unit tests verifying results.csv schema conformity
+test_papers_and_chunking.py,tests/test_papers_and_chunking.py,Test Suite,.py,1.88,56,Unit tests for PDF extraction and token chunking
+test_pipeline.py,tests/test_pipeline.py,Test Suite,.py,10.49,331,Integration tests for end-to-end pipeline execution
+test_provider_switching.py,tests/test_provider_switching.py,Test Suite,.py,12.75,368,Automated tests A-G for genuine dual provider switching
+test_rate_limiter_and_queue.py,tests/test_rate_limiter_and_queue.py,Test Suite,.py,1.95,70,"Unit tests for rate limits, queue overflow, and budgets"
+test_retrieval.py,tests/test_retrieval.py,Test Suite,.py,2.66,72,Unit tests for BM25 retrieval and phrase reranking
+test_retry_and_resilience.py,tests/test_retry_and_resilience.py,Test Suite,.py,1.65,53,Unit tests for retry backoff and circuit breaker behavior
+test_standin_service.py,tests/test_standin_service.py,Test Suite,.py,1.37,49,Unit tests for stand-in simulator quotas and load slowdown
