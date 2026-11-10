@@ -1,0 +1,4 @@
+"Setting (piece size, pieces fetched, re-rank yes or no)",Questions asked,Correct and cited %,Wrong %,Correctly refused %,Tokens per answer,First token p50 / p95 (ms),Total time p50 / p95 (ms)
+"Setting A (350 tok, top-3, no rerank)",16,75.0%,0.0%,18.8%,2872,771 / 902,777 / 908
+"Setting B (600 tok, top-5, rerank yes)",16,75.0%,0.0%,18.8%,2872,741 / 873,747 / 888
+"Setting C (900 tok, top-8, rerank yes)",16,75.0%,0.0%,18.8%,2872,760 / 882,767 / 889

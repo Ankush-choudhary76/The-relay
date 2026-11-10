@@ -1,0 +1,7 @@
+Scenario,Succeeded %,Rate-limited %,Timed out or given up %,Retries per request,Peak queue length,Tokens per answer,"Cost per 1,000 answers"
+steady,13.3%,33.3%,53.3%,0.0,1,39,$0.00 (Free Tier)
+burst,0.0%,0.0%,100.0%,0.0,20,0,$0.00 (Free Tier)
+sustained_overload,5.7%,14.3%,80.0%,0.0,20,34,$0.00 (Free Tier)
+per-minute limit halved,15.0%,25.0%,60.0%,0.0,20,37,$0.00 (Free Tier)
+daily budget exhausted,0.0%,0.0%,100.0%,0.0,20,0,$0.00 (Free Tier)
+real_groq_baseline,100.0%,0.0%,0.0%,0.0,1,346,$0.00 (Free Tier)

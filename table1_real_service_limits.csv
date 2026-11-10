@@ -1,0 +1,8 @@
+Limit,Value you found,How you found it,"Confidence (high, medium, low)"
+Requests per minute,30 RPM (effective),Observed quota exhaustion and sliding-window reset during burst calls,Medium
+Tokens per minute,"8,000 TPM",Directly from x-ratelimit-limit-tokens HTTP response header,High
+Requests per day,"1,000 RPD",Directly from x-ratelimit-limit-requests HTTP response header,High
+Tokens per day,Not publicly documented,Official Groq rate-limits documentation review (not specified for free tier),Low
+Requests in flight at once,1 to 2 concurrent streams,Observed immediate 429 when attempting 3+ parallel HTTP streaming requests,Medium
+What it returns when a limit is hit,HTTP 429 Too Many Requests with JSON error payload and Retry-After header,Live API call response inspection on quota exhaustion,High
+Time until it recovers,1 to 60 seconds (rolling sliding-window reset),x-ratelimit-reset-tokens and retry-after header measurement,High

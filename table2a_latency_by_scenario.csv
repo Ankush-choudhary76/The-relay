@@ -1,0 +1,7 @@
+Scenario,Real or stand-in,Requests sent,Duration (s),Offered rate (per min),First token p50 / p95 / p99 (ms),Total time p50 / p95 / p99 (ms)
+steady,stand-in,15,30.0,30.0,771 / 797 / 800,776 / 803 / 805
+burst,stand-in,20,2.0,600.0,not measured,not measured
+sustained_overload,stand-in,35,70.0,30.0,824 / 878 / 883,830 / 883 / 887
+per-minute limit halved,stand-in,20,40.0,30.0,769 / 877 / 887,772 / 882 / 892
+daily budget exhausted,stand-in,10,5.0,120.0,not measured,not measured
+real_groq_baseline,real,5,25.0,12.0,758 / 1529 / 1681,903 / 1836 / 2016
